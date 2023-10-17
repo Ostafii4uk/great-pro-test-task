@@ -1,0 +1,18 @@
+{
+  "name": "great-pro-test-task",
+  "version": "1.0.0",
+  "description": "great-pro-test-task",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "node-sass -w src/styles/main.scss src/styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ostafii4uk/great-pro-test-task.git"
+  },
+  "author": "Nazar Ostafiichuk",
+  "homepage": "https://github.com/Ostafii4uk/great-pro-test-task#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
