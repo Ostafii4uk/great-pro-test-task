@@ -1,4 +1,7 @@
-@import "./utilis/reset";
-@import "./utilis/normalize";
-@import "./utilis/mixins";
-@import "./utilis/var";
+@import "utilis/reset";
+@import "utilis/normalize";
+@import "utilis/mixins";
+@import "utilis/var";
+
+@import "blocks/main.scss";
+@import "blocks/checkbox.scss";
