@@ -3,6 +3,10 @@
   gap: 15px;
   align-items: center;
 
+  & :focus:not(.focus-visible) {
+    outline: 0;
+  }
+
   .checkbox-input {
     appearance: none;
     background-color: silver;
@@ -37,6 +41,7 @@
     &:hover {
       background-color: gray;
       transition-duration: 0.3s;
+      cursor: pointer;
     }
 
     &:checked {
@@ -51,18 +56,10 @@
         background-color: #535db3;
       }
     }
+
+    &,
+    &::after {
+      transition: all 100ms ease-out;
+    }
   }
-}
-
-.checkbox-wrapper .checkbox-input,
-.checkbox-wrapper .checkbox-input::after {
-  transition: all 100ms ease-out;
-}
-
-.checkbox-wrapper input[type=checkbox] {
-  cursor: pointer;
-}
-
-.checkbox-wrapper :focus:not(.focus-visible) {
-  outline: 0;
 }

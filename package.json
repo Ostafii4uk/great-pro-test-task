@@ -4,7 +4,7 @@
   "description": "great-pro-test-task",
   "main": "index.js",
   "scripts": {
-    "watch:scss": "node-sass -w src/styles/main.scss src/styles/main.css"
+    "watch:scss": "node-sass -w src/styles/index.scss src/styles/index.css"
   },
   "repository": {
     "type": "git",

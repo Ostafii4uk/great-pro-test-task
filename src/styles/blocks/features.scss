@@ -1,0 +1,38 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+
+  &-head {
+    padding: 1rem;
+  }
+
+  &-title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  &-description {
+    font-size: 10px;
+    color: gray;
+  }
+
+  &-list {
+    gap: 5px;
+  }
+
+  &-item {
+    padding: 0.5rem;
+    font-size: 13px;
+    height: 2rem;
+    color: gray;
+
+    &:nth-child(odd) {
+      background-color: #F3F3F5;
+    }
+
+    &:nth-child(even) {
+      background-color: #FAFAFC;
+    }
+  }
+}
