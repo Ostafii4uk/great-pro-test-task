@@ -24,6 +24,12 @@
     font-weight: 400;
   }
 
+  &-settings {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
   &-wrapper {
     width: 100%;
     padding: 60px 1.7rem 1rem;

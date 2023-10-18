@@ -20,6 +20,61 @@ a {
   text-decoration: none;
   display: block; }
 
+.checkbox-theme {
+  display: flex;
+  gap: 15px; }
+
+.checkbox-theme-wrapper {
+  width: 30px;
+  height: 20px; }
+  .checkbox-theme-wrapper input[type="checkbox"] {
+    visibility: hidden;
+    display: none; }
+  .checkbox-theme-wrapper *,
+  .checkbox-theme-wrapper ::after,
+  .checkbox-theme-wrapper ::before {
+    box-sizing: border-box; }
+  .checkbox-theme-wrapper .switch {
+    --width-of-switch: 30px;
+    --height-of-switch: 20px;
+    --size-of-icon: 0.9em;
+    --slider-offset: 0.2em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+    display: inline-block; }
+  .checkbox-theme-wrapper .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccccce;
+    transition: .2s ease-in-out;
+    border-radius: 30px; }
+    .checkbox-theme-wrapper .slider:hover {
+      background-color: gray; }
+    .checkbox-theme-wrapper .slider:before {
+      position: absolute;
+      content: "";
+      height: var(--size-of-icon);
+      width: var(--size-of-icon);
+      border-radius: 20px;
+      left: var(--slider-offset, 0.3em);
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+      transition: .2s ease-in-out; }
+  .checkbox-theme-wrapper input:checked + .slider {
+    background-color: #303136; }
+    .checkbox-theme-wrapper input:checked + .slider:hover {
+      background-color: #4c4d55; }
+  .checkbox-theme-wrapper input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb; }
+
 .checkbox-wrapper {
   display: flex;
   gap: 15px;
@@ -28,7 +83,7 @@ a {
     outline: 0; }
   .checkbox-wrapper .checkbox-input {
     appearance: none;
-    background-color: silver;
+    background-color: #ccccce;
     border-radius: 72px;
     border-style: none;
     flex-shrink: 0;
@@ -226,6 +281,10 @@ a {
   .table-title {
     text-transform: uppercase;
     font-weight: 400; }
+  .table-settings {
+    display: flex;
+    align-items: center;
+    gap: 20px; }
   .table-wrapper {
     width: 100%;
     padding: 60px 1.7rem 1rem; }
