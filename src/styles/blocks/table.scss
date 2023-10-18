@@ -9,6 +9,7 @@
   height: 100vh;
 
   @include onMobile {
+    gap: 10rem;
     padding: 2rem 1rem;
   }
 
@@ -27,6 +28,11 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @include onMobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &-wrapper {
@@ -44,7 +50,7 @@
     background-color: #fff;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     @include onMobile {
       gap: 5px;
@@ -55,7 +61,7 @@
       background-color: #090c2580;
       color: #fff;
       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-      transition: background-color 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
   }
 
