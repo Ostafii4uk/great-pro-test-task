@@ -243,17 +243,17 @@ a {
     .plan-button:active {
       transform: scale(0.9); }
     .plan-button--basic {
-      background-color: #f8a233;
+      background-color: #F8A233;
       transition: all 0.2s ease-in-out; }
       .plan-button--basic:hover {
         box-shadow: rgba(248, 162, 51, 0.5) 0px 8px 24px; }
     .plan-button--standart {
-      background-color: #0cadfe;
+      background-color: #0CADFE;
       transition: all 0.2s ease-in-out; }
       .plan-button--standart:hover {
         box-shadow: rgba(12, 173, 254, 0.5) 0px 8px 24px; }
     .plan-button--premium {
-      background-color: #7a55fd;
+      background-color: #7A55FD;
       transition: all 0.2s ease-in-out; }
       .plan-button--premium:hover {
         box-shadow: rgba(122, 85, 253, 0.5) 0px 8px 24px; }

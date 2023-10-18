@@ -35,15 +35,15 @@
     border-top-left-radius: 20px;
 
     &--basic {
-      background-color: #F8A233;
+      background-color: $basic-plan-color;
     }
 
     &--standart {
-      background-color: #0CADFE;
+      background-color: $standart-plan-color;
     }
 
     &--premium {
-      background-color: #7A55FD;
+      background-color: $premium-plan-color;
     }
   }
 
@@ -131,7 +131,7 @@
     }
 
     &--basic {
-      background-color: #f8a233;
+      background-color: $basic-plan-color;
       transition: all 0.2s ease-in-out;
 
       &:hover {
@@ -140,7 +140,7 @@
     }
 
     &--standart {
-      background-color: #0cadfe;
+      background-color: $standart-plan-color;
       transition: all 0.2s ease-in-out;
 
       &:hover {
@@ -149,7 +149,7 @@
     }
 
     &--premium {
-      background-color: #7a55fd;
+      background-color: $premium-plan-color;
       transition: all 0.2s ease-in-out;
 
       &:hover {

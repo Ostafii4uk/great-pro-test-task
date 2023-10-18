@@ -8,8 +8,8 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #fff;
-  background-color: #0A1044;
+  color: $body-color;
+  background-color: $body-background-color;
 }
 
 a {
