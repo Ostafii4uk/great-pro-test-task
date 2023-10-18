@@ -32,3 +32,31 @@ tabPremium.addEventListener('click', () => {
   tabStandart.classList.remove('tab--active')
   tabPremium.classList.add('tab--active')
 })
+
+const switchYearly = document.getElementById('switch-yearly')
+const priceBasicElement = document.getElementById('price-basic')
+const priceStandartElement = document.getElementById('price-standart')
+const pricePremiumElement = document.getElementById('price-premium')
+const priceBasic = Number(document.getElementById('price-basic').textContent.replace('$', ''))
+const priceStandart = Number(document.getElementById('price-standart').textContent.replace('$', ''))
+const pricePremium = Number(document.getElementById('price-premium').textContent.replace('$', ''))
+
+function getYearlyPrice (price) {
+  return `$${(price * 12).toFixed()}`
+}
+
+function getMonthlyPrice (price) {
+  return `$${price}`
+}
+
+switchYearly.addEventListener('click', () => {
+  if (switchYearly.checked) {
+    priceBasicElement.textContent = getYearlyPrice(priceBasic)
+    priceStandartElement.textContent = getYearlyPrice(priceStandart)
+    pricePremiumElement.textContent = getYearlyPrice(pricePremium)
+  } else {
+    priceBasicElement.textContent = getMonthlyPrice(priceBasic)
+    priceStandartElement.textContent = getMonthlyPrice(priceStandart)
+    pricePremiumElement.textContent = getMonthlyPrice(pricePremium)
+  }
+})
