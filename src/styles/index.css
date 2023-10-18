@@ -140,10 +140,18 @@ a {
     font-size: 13px;
     height: 2rem;
     color: gray; }
+    .table--dark .features-item:nth-child(odd) {
+      background-color: #1c2677;
+      transition: background-color 0.3s ease-in-out; }
     .features-item:nth-child(odd) {
-      background-color: #F3F3F5; }
+      background-color: #F3F3F5;
+      transition: background-color 0.3s ease-in-out; }
+    .table--dark .features-item:nth-child(even) {
+      background-color: #0A1044;
+      transition: background-color 0.3s ease-in-out; }
     .features-item:nth-child(even) {
-      background-color: #FAFAFC; }
+      background-color: #FAFAFC;
+      transition: background-color 0.3s ease-in-out; }
 
 .plan {
   position: relative;
@@ -201,10 +209,18 @@ a {
     .plan-item:last-child {
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px; }
+    .table--dark .plan-item:nth-child(odd) {
+      background-color: #0A1044;
+      transition: background-color 0.3s ease-in-out; }
     .plan-item:nth-child(odd) {
-      background-color: #F4F4F4; }
+      background-color: #F4F4F4;
+      transition: background-color 0.3s ease-in-out; }
+    .table--dark .plan-item:nth-child(even) {
+      background-color: #1c2677;
+      transition: background-color 0.3s ease-in-out; }
     .plan-item:nth-child(even) {
-      background-color: #E8E7EC; }
+      background-color: #E8E7EC;
+      transition: background-color 0.3s ease-in-out; }
   .plan-price {
     font-size: 28px;
     color: #F8A233; }
@@ -297,11 +313,17 @@ a {
     color: #060313;
     background-color: #fff;
     border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: background-color 0.3s ease-in-out; }
     @media (max-width: 450px) {
       .table-body {
         gap: 5px;
         padding: 0; } }
+    .table--dark .table-body {
+      background-color: #090c2580;
+      color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      transition: background-color 0.3s ease-in-out; }
   .table-tabs {
     visibility: hidden;
     opacity: 0;

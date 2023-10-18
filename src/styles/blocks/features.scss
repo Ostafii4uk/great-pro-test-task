@@ -27,12 +27,24 @@
     height: 2rem;
     color: gray;
 
+    .table--dark &:nth-child(odd) {
+      background-color: rgb(28, 38, 119);
+      transition: background-color 0.3s ease-in-out;
+    }
+
     &:nth-child(odd) {
       background-color: #F3F3F5;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .table--dark &:nth-child(even) {
+      background-color: #0A1044;
+      transition: background-color 0.3s ease-in-out;
     }
 
     &:nth-child(even) {
       background-color: #FAFAFC;
+      transition: background-color 0.3s ease-in-out;
     }
   }
 }

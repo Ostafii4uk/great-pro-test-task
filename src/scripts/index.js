@@ -60,3 +60,15 @@ switchYearly.addEventListener('click', () => {
     pricePremiumElement.textContent = getMonthlyPrice(pricePremium)
   }
 })
+
+const switchTheme = document.getElementById('switch-theme')
+const switchThemeInput = document.getElementById('switch-theme-input')
+const table = document.getElementById('table')
+
+switchTheme.addEventListener('click', () => {
+  if (switchThemeInput.checked) {
+    table.classList.add('table--dark')
+  } else {
+    table.classList.remove('table--dark')
+  }
+})
