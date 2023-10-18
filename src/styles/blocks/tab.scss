@@ -1,0 +1,37 @@
+.tab {
+  width: 100%;
+  min-width: 100px;
+  height: 60px;
+  padding: 0.7rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: all 0.4s ease-in-out;
+
+  &--active {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &--basic {
+    background-color: #F8A233;
+  }
+
+  &--standart {
+    background-color: #0CADFE;
+  }
+
+  &--premium {
+    background-color: #7A55FD;
+  }
+
+  &-description {
+    font-size: 11px;
+    font-weight: 200;
+  }
+}

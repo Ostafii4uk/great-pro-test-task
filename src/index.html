@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Great pro | Pricing table</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="images/ico/favicons.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -13,7 +14,147 @@
   <body>
     <header></header>
     <main>
-      <h1>Hello Great Pro</h1>
+      <div id='table' class='table'>
+        <div class="table-header">
+          <h1 class='table-title'>Pricing table</h1>
+          <div class='table-settings'>
+            <div id='switch-theme' class="checkbox-theme">
+              <span>Theme</span>
+              <div class="checkbox-theme-wrapper">
+                <label class="switch">
+                  <input id='switch-theme-input' type="checkbox">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div class="checkbox-wrapper">
+              <span>Yearly</span>
+              <input id='switch-yearly' type="checkbox" class="checkbox-input">
+            </div>
+          </div>
+        </div>
+        <div class="table-body">
+          <div class="features">
+            <div class="features-head">
+              <h3 class='features-title'>Features</h3>
+              <p class='features-description'>See details bellow</p>
+            </div>
+            <ul class="features-list">
+              <li class="features-item">Lorem ipsum</li>
+              <li class="features-item">Lorem ipsum</li>
+              <li class="features-item">Lorem ipsum</li>
+              <li class="features-item">Lorem ipsum</li>
+              <li class="features-item">Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="plans">
+            <div id='plan-basic' class='plan plan-active'>
+              <div class='plan-header plan-header--basic'>
+                <h3 class='plan-title'>Basic</h3>
+                <p class='plan-description'>See details bellow</p>
+              </div>
+              <ul class='plan-list'>
+                <li class='plan-item'>
+                  <h2 id='price-basic' class='plan-price'>$2.99</h2>
+                  <p class='plan-frequency'>per month</p>
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/cross.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/cross.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <button class='plan-button plan-button--basic'>Sign Up</button>
+                </li>
+              </ul>
+            </div>
+            <div id='plan-standart' class='plan'>
+              <div class='plan-header plan-header--standart'>
+                <h3 class='plan-title'>Standart</h3>
+                <p class='plan-description'>See details bellow</p>
+              </div>
+              <ul class='plan-list'>
+                <li class='plan-item'>
+                  <h2 id='price-standart' class='plan-price'>$4.99</h2>
+                  <p class='plan-frequency'>per month</p>
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/cross.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <button class='plan-button plan-button--standart'>Sign Up</button>
+                </li>
+              </ul>
+            </div>
+            <div id='plan-premium' class='plan'>
+              <div class='plan-header plan-header--premium'>
+                <h3 class='plan-title'>Premium</h3>
+                <p class='plan-description'>See details bellow</p>
+              </div>
+              <ul class='plan-list'>
+                <li class='plan-item'>
+                  <h2 id='price-premium' class='plan-price'>$9.99</h2>
+                  <p class='plan-frequency'>per month</p>
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <img class='plan-icon-availability' src="./images/svg/checkmark.svg" alt="Checkmark">
+                </li>
+                <li class='plan-item'>
+                  <button class='plan-button plan-button--premium'>Sign Up</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class='table-tabs'>
+            <div id='tab-basic' class='tab tab--basic tab--active'>
+              <h3 class='tab-title'>Basic</h3>
+              <p class='tab-description'>See details bellow</p>
+            </div>
+            <div id='tab-standart' class='tab tab--standart'>
+              <h3 class='tab-title'>Standart</h3>
+              <p class='tab-description'>See details bellow</p>
+            </div>
+            <div id='tab-premium' class='tab tab--premium'>
+              <h3 class='tab-title'>Premium</h3>
+              <p class='tab-description'>See details bellow</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer></footer>
   </body>
